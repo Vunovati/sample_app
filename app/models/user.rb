@@ -15,6 +15,8 @@ class User < ActiveRecord::Base
  attr_accessor :password 
  attr_accessible :name, :email, :password, :password_confirmation
 
+ has_many :microposts, :dependent => :destroy # dependent osigurava da se micropostovi deletaju nakon deletanja usera
+
  email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
  
  validates :name, :presence => true,
@@ -48,6 +50,15 @@ class User < ActiveRecord::Base
  def self.authenticate_with_salt(id, cookie_salt)
     user = find_by_id(id)
     (user && user.salt == cookie_salt) ? user : nil # ternarni operator za if then else, idiomatski ispravno
+ end
+
+ def feed
+   # This is preliminary. See Chapter 12 for the full implementation.
+   Micropost.where("user_id = ?", id)
+   # ensures that id is properly escaped before being included in the underlying SQL query, 
+   # thereby avoiding a serious security hole called SQL injection. 
+   # (The id attribute here is just an integer, so there is no danger in this case, 
+   # but always escaping variables injected into SQL statements is a good habit to cultivate.)
  end
 
  
