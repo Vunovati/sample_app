@@ -1,7 +1,11 @@
 SampleApp::Application.routes.draw do
   get "sessions/new"
 
-  resources :users  
+  # resources :users  
+  resources :users do # Nested resource, user/(id usera)/(indeks mikropostova)
+    resources :microposts
+  end
+
   resources :sessions, :only => [:new, :create, :destroy]
   resources :microposts, :only => [:create, :destroy]
   #get "users/new"
