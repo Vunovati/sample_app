@@ -1,0 +1,6 @@
+<h1>All posts by <%= @title %></h1>
+
+<table class="microposts" summary="Users microposts">
+  <%= render @microposts %>
+</table>
+<%= will_paginate @microposts %>

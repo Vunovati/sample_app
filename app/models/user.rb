@@ -16,6 +16,17 @@ class User < ActiveRecord::Base
  attr_accessible :name, :email, :password, :password_confirmation
 
  has_many :microposts, :dependent => :destroy # dependent osigurava da se micropostovi deletaju nakon deletanja usera
+ has_many :relationships, :foreign_key => "follower_id", # strani kljuc koji povezuje dva tablesa
+                          :dependent => :destroy
+ 
+ # micropost/user_id <--> relationships/follower_id. Unisti userove odnose kad unistis usera 
+ has_many :following, :through => :relationships, :source => :followed # source sluzi da se ne koristi losa mnozina
+ # followeds nego ona koju smo napomenuli: following, a onda railsima pojasnimo da je izvor te rijeci followed
+ 
+ has_many :reverse_relationships, :foreign_key => "followed_id", # samo obrnuta Relationships tablica
+                                  :class_name => "Relationship", # inace bi trazio ReverseRelationship klasu koje nema
+                                  :dependent => :destroy
+ has_many :followers, :through => :reverse_relationships, :source => :follower
 
  email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
  
@@ -52,13 +63,20 @@ class User < ActiveRecord::Base
     (user && user.salt == cookie_salt) ? user : nil # ternarni operator za if then else, idiomatski ispravno
  end
 
+ def following?(followed)
+   relationships.find_by_followed_id(followed)
+ end
+
+ def follow!(followed)
+   relationships.create!(:followed_id => followed.id)
+ end
+ 
+ def unfollow!(followed)
+   relationships.find_by_followed_id(followed).destroy
+ end
+
  def feed
-   # This is preliminary. See Chapter 12 for the full implementation.
-   Micropost.where("user_id = ?", id)
-   # ensures that id is properly escaped before being included in the underlying SQL query, 
-   # thereby avoiding a serious security hole called SQL injection. 
-   # (The id attribute here is just an integer, so there is no danger in this case, 
-   # but always escaping variables injected into SQL statements is a good habit to cultivate.)
+   Micropost.from_users_followed_by(self)
  end
 
  

@@ -4,10 +4,14 @@ SampleApp::Application.routes.draw do
   # resources :users  
   resources :users do # Nested resource, user/(id usera)/(indeks mikropostova)
     resources :microposts
+    member do
+      get :following, :followers # user/(id usera)/followers odgovara na GET request
+    end
   end
 
   resources :sessions, :only => [:new, :create, :destroy]
   resources :microposts, :only => [:create, :destroy]
+  resources :relationships, :only => [:create, :destroy]
   #get "users/new"
 
   match '/signup', :to => 'users#new'

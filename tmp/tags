@@ -1,0 +1,86 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AddAdminToUsers	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/db/migrate/20110215162026_add_admin_to_users.rb	/^class AddAdminToUsers < ActiveRecord::Migration$/;"	c
+AddEmailUniquenessIndex	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/db/migrate/20110204140501_add_email_uniqueness_index.rb	/^class AddEmailUniquenessIndex < ActiveRecord::Migration$/;"	c
+AddPasswordsToUsers	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/db/migrate/20110206160241_add_passwords_to_users.rb	/^class AddPasswordsToUsers < ActiveRecord::Migration$/;"	c
+AddSaltToUsers	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/db/migrate/20110206174702_add_salt_to_users.rb	/^class AddSaltToUsers < ActiveRecord::Migration$/;"	c
+Application	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/config/application.rb	/^  class Application < Rails::Application$/;"	c	class:SampleApp
+ApplicationController	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/controllers/application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	c
+ApplicationHelper	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	m
+CreateMicroposts	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/db/migrate/20110215225444_create_microposts.rb	/^class CreateMicroposts < ActiveRecord::Migration$/;"	c
+CreateUsers	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/db/migrate/20110131163109_create_users.rb	/^class CreateUsers < ActiveRecord::Migration$/;"	c
+Micropost	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/models/micropost.rb	/^class Micropost < ActiveRecord::Base$/;"	c
+MicropostsController	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/controllers/microposts_controller.rb	/^class MicropostsController < ApplicationController$/;"	c
+MicropostsHelper	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/helpers/microposts_helper.rb	/^module MicropostsHelper$/;"	m
+PagesController	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/controllers/pages_controller.rb	/^class PagesController < ApplicationController$/;"	c
+PagesHelper	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/helpers/pages_helper.rb	/^module PagesHelper$/;"	m
+SampleApp	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/config/application.rb	/^module SampleApp$/;"	m
+SessionsController	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/controllers/sessions_controller.rb	/^class SessionsController < ApplicationController$/;"	c
+SessionsHelper	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/helpers/sessions_helper.rb	/^module SessionsHelper$/;"	m
+User	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/models/user.rb	/^class User < ActiveRecord::Base$/;"	c
+UsersController	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/controllers/users_controller.rb	/^class UsersController < ApplicationController$/;"	c
+UsersHelper	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/helpers/users_helper.rb	/^module UsersHelper$/;"	m
+about	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/controllers/pages_controller.rb	/^  def about$/;"	f	class:PagesController
+admin_user	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/controllers/users_controller.rb	/^    def admin_user$/;"	f	class:UsersController
+authenticate	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/helpers/sessions_helper.rb	/^  def authenticate$/;"	f	class:SessionsHelper
+authenticate	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/models/user.rb	/^ def self.authenticate(email, submitted_password)$/;"	F	class:User
+authenticate_with_salt	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/models/user.rb	/^ def self.authenticate_with_salt(id, cookie_salt)$/;"	F	class:User
+authorized_user	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/controllers/microposts_controller.rb	/^    def authorized_user$/;"	f	class:MicropostsController
+clear_return_to	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/helpers/sessions_helper.rb	/^    def clear_return_to$/;"	f	class:SessionsHelper
+contact	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/controllers/pages_controller.rb	/^  def contact$/;"	f	class:PagesController
+correct_user	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/controllers/users_controller.rb	/^    def correct_user$/;"	f	class:UsersController
+create	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/controllers/microposts_controller.rb	/^  def create$/;"	f	class:MicropostsController
+create	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/controllers/sessions_controller.rb	/^  def create$/;"	f	class:SessionsController
+create	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/controllers/users_controller.rb	/^  def create$/;"	f	class:UsersController
+current_user	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/helpers/sessions_helper.rb	/^  def current_user$/;"	f	class:SessionsHelper
+current_user=	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/helpers/sessions_helper.rb	/^  def current_user=(user)$/;"	f	class:SessionsHelper
+current_user?	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/helpers/sessions_helper.rb	/^  def current_user?(user)$/;"	f	class:SessionsHelper
+deny_access	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/helpers/sessions_helper.rb	/^  def deny_access$/;"	f	class:SessionsHelper
+destroy	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/controllers/microposts_controller.rb	/^  def destroy$/;"	f	class:MicropostsController
+destroy	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/controllers/sessions_controller.rb	/^  def destroy$/;"	f	class:SessionsController
+destroy	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/controllers/users_controller.rb	/^  def destroy$/;"	f	class:UsersController
+down	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/db/migrate/20110131163109_create_users.rb	/^  def self.down$/;"	F	class:CreateUsers
+down	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/db/migrate/20110204140501_add_email_uniqueness_index.rb	/^  def self.down$/;"	F	class:AddEmailUniquenessIndex
+down	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/db/migrate/20110206160241_add_passwords_to_users.rb	/^  def self.down$/;"	F	class:AddPasswordsToUsers
+down	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/db/migrate/20110206174702_add_salt_to_users.rb	/^  def self.down$/;"	F	class:AddSaltToUsers
+down	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/db/migrate/20110215162026_add_admin_to_users.rb	/^  def self.down$/;"	F	class:AddAdminToUsers
+down	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/db/migrate/20110215225444_create_microposts.rb	/^  def self.down$/;"	F	class:CreateMicroposts
+edit	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/controllers/users_controller.rb	/^  def edit$/;"	f	class:UsersController
+encrypt	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/models/user.rb	/^  def encrypt(string)$/;"	f	class:User
+encrypt_password	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/models/user.rb	/^  def encrypt_password$/;"	f	class:User
+feed	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/models/user.rb	/^ def feed$/;"	f	class:User
+gravatar_for	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/helpers/users_helper.rb	/^  def gravatar_for(user, options = { :size => 50 })$/;"	f	class:UsersHelper
+has_password?	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/models/user.rb	/^ def has_password?(submitted_password)$/;"	f	class:User
+help	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/controllers/pages_controller.rb	/^  def help$/;"	f	class:PagesController
+home	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/controllers/pages_controller.rb	/^  def home$/;"	f	class:PagesController
+index	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/controllers/microposts_controller.rb	/^  def index$/;"	f	class:MicropostsController
+index	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/controllers/users_controller.rb	/^  def index$/;"	f	class:UsersController
+logged_in	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/controllers/users_controller.rb	/^    def logged_in $/;"	f	class:UsersController
+logo	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/helpers/application_helper.rb	/^  def logo$/;"	f	class:ApplicationHelper
+make_salt	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/models/user.rb	/^  def make_salt$/;"	f	class:User
+new	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/controllers/sessions_controller.rb	/^  def new$/;"	f	class:SessionsController
+new	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/controllers/users_controller.rb	/^  def new$/;"	f	class:UsersController
+redirect_back_or	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/helpers/sessions_helper.rb	/^  def redirect_back_or(default)$/;"	f	class:SessionsHelper
+remember_token	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/helpers/sessions_helper.rb	/^    def remember_token$/;"	f	class:SessionsHelper
+secure_hash	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/models/user.rb	/^  def secure_hash(string)$/;"	f	class:User
+show	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/controllers/users_controller.rb	/^  def show$/;"	f	class:UsersController
+sign_in	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/helpers/sessions_helper.rb	/^  def sign_in(user)$/;"	f	class:SessionsHelper
+sign_out	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/helpers/sessions_helper.rb	/^  def sign_out$/;"	f	class:SessionsHelper
+signed_in?	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/helpers/sessions_helper.rb	/^  def signed_in?$/;"	f	class:SessionsHelper
+store_location	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/helpers/sessions_helper.rb	/^    def store_location$/;"	f	class:SessionsHelper
+test_sign_in	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/spec/spec_helper.rb	/^  def test_sign_in(user)$/;"	f
+title	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/helpers/application_helper.rb	/^  def title$/;"	f	class:ApplicationHelper
+up	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/db/migrate/20110131163109_create_users.rb	/^  def self.up$/;"	F	class:CreateUsers
+up	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/db/migrate/20110204140501_add_email_uniqueness_index.rb	/^  def self.up$/;"	F	class:AddEmailUniquenessIndex
+up	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/db/migrate/20110206160241_add_passwords_to_users.rb	/^  def self.up$/;"	F	class:AddPasswordsToUsers
+up	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/db/migrate/20110206174702_add_salt_to_users.rb	/^  def self.up$/;"	F	class:AddSaltToUsers
+up	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/db/migrate/20110215162026_add_admin_to_users.rb	/^  def self.up$/;"	F	class:AddAdminToUsers
+up	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/db/migrate/20110215225444_create_microposts.rb	/^  def self.up$/;"	F	class:CreateMicroposts
+update	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/controllers/users_controller.rb	/^  def update$/;"	f	class:UsersController
+user_from_remember_token	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/helpers/sessions_helper.rb	/^    def user_from_remember_token$/;"	f	class:SessionsHelper
+wrap	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/helpers/microposts_helper.rb	/^  def wrap(content)$/;"	f	class:MicropostsHelper
+wrap_long_string	/home/ovca/Dropbox/Programiranje/ruby/rails_projects/sample_app/app/helpers/microposts_helper.rb	/^    def wrap_long_string(text, max_width = 30) # isprekidaj duge rijeci kako se nebi raspao layout$/;"	f	class:MicropostsHelper
