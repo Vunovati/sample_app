@@ -1,0 +1,8 @@
+<td class="sidebar round">
+  <%= render :partial => 'shared/sidebar_content' %>
+  <% unless @users.empty? %>
+    <% @users.each do |user| %>
+      <%= link_to gravatar_for(user, :size => 30), user %>
+    <% end %>
+  <% end %>
+</td>

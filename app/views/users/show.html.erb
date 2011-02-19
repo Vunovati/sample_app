@@ -14,10 +14,7 @@
       <% end %>
     </td>
     <td class = "sidebar round">
-      <strong>Name:</strong> <%= @user.name %><br />
-      <strong>email:</strong> <%= @user.email %><br />
-      <strong>URL:</strong> <%= link_to user_path(@user), @user %>
-      <strong>Microposts:</strong> <%= @user.microposts.count %>
+      <%= render 'shared/sidebar_content' %>
     </td>
   </tr>
 </table>
