@@ -1,0 +1,5 @@
+<p><%= @user.name %> !</p>
+
+<p>Welcome to shitter dude !!!</p>
+
+Edit profile: <%= edit_user_path(@user) %>
